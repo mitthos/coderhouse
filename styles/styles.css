@@ -170,7 +170,7 @@ footer {
   height: 200px;
 }
 
-.btn {
+.btn-common {
   width: 5rem;
   background-color: #8AC9F0;
   border-color: #78c0ed;
@@ -178,7 +178,7 @@ footer {
   text-align: center;
 }
 
-.btn:hover {
+.btn-common:hover {
   background-color: white;
   border-color: #78c0ed;
 }
