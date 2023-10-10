@@ -1,0 +1,256 @@
+@import url('../fonts/Ubuntu-Regular.ttf');
+
+/*Comunes*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif; 
+    color: darkblue;
+}
+
+.logo {
+    height: 200px;
+    /* padding-top: 50px; */
+    padding-left: 150px;
+
+}
+
+/*Header*/
+
+header {
+    /* background-color: #42B6E5; */
+    background-color: #fff;
+    color:#fff;
+    height: 100%;
+    font-size: 700;
+    background-image: url("../assets/banner3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header a {
+    color: blue;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+.header-div {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 33%;
+    
+}
+
+.header-title {
+    vertical-align: top;
+    text-align: center;
+    color: blue;
+    padding-top: 100px;
+}
+
+
+.header-nav {
+    display: block;
+    /* vertical-align: middle; */
+    min-width: 50%;
+    text-align: right;
+    padding-right: 30px;
+} 
+
+.header-nav li {
+    padding-right: 30px;
+    margin: 10px;
+}
+
+/*Main*/
+
+main {
+    /* background-color: #fff; */
+    /* background-color: aliceblue; */
+    height: auto;
+}
+
+main h1 {
+    text-decoration: underline;
+}
+
+
+.main-section {
+    padding: 15px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.main-article {
+    display: inline-block;
+    width: 70%;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.main-article p{
+    /* display: inline-block; */
+    display: inline-block;
+    vertical-align: middle;
+    text-align: justify;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 400;
+}
+
+.main-article-iframe {
+    width: 100%;
+    /* display: inline-block; */
+    padding: 50px;
+    text-align: center;
+}
+
+.fed-main-section {
+    /* display: inline-block; */
+    padding: 30px;
+    vertical-align: middle;
+    min-width: 33%;
+    text-align: center;
+}
+
+.fed-main-article {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 400;
+    padding: 15px;
+}
+
+.fed-main-img {
+    height: 128px;
+}
+
+.tor-main-section {
+    /* display: inline-block; */
+    padding: 30px;
+    vertical-align: middle;
+    min-width: 33%;
+    text-align: center;
+}
+
+.tor-main-article {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 400;
+    padding: 15px 150px 15px 150px;
+}
+
+.tor-main-img {
+    height: 300px;
+}
+
+.nos-main-section {
+    /* display: inline-block; */
+    padding: 15px;
+    vertical-align: middle;
+    min-width: 33%;
+    text-align: center;
+}
+
+.nos-main-article {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: justify;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 400;
+    padding: 15px 150px 15px 150px;
+}
+
+.nos-main-img {
+    height: 300px;
+}
+
+.con-main-section {
+    /* display: inline-block; */
+    padding: 15px;
+    vertical-align: middle;
+    min-width: 33%;
+    text-align: center;
+}
+
+.con-main-article {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 400;
+    padding: 15px 150px 15px 150px;
+}
+
+.con-main-img {
+    height: 300px;
+}
+
+/*Footer*/
+footer {
+    /* display: inline-block; */
+    vertical-align: middle;
+    background-image: url("../assets/banner3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: darkblue;
+}
+
+footer ul li a {
+    color: darkblue;
+}
+footer ul li{
+    display: block;
+}
+
+.footer-div {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 33%;
+    
+}
+
+.footer-div a {
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 40px;
+}
+
+.left-div-width {
+    padding-left: 50px;
+}
+
+.mid-div-width {
+    min-width: 33%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.right-div-width {
+    text-align: justify;
+    padding-left: 200px;
+}
+
+.right-div-width ul li{
+    padding-bottom: 10px;
+}
+
+.link-img {
+    padding-right: 15px;
+}
