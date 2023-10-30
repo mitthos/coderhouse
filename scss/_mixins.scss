@@ -1,0 +1,26 @@
+@mixin botones($color-primario, $color-secundario, $text-decorator) {
+    border: 2px solid #3498db;
+    border-radius: 10px; 
+    background-color: $color-primario; 
+    color: $color-secundario;
+    padding: 10px 20px; 
+    text-decoration: none;
+    cursor: pointer; 
+    &:hover {
+      background-color: $color-secundario;
+      text-decoration: $text-decorator;
+      color: $color-primario;
+      animation: movimiento 0.7s ease-in-out both;
+    }
+}
+
+.boton-federaciones {
+    @include botones($color-primario, $color-secundario, $text-decorator);
+}
+
+.boton-torneos {
+    @include botones($color-secundario, $color-primario, $text-decorator);
+}
+.boton-contacto {
+    @include botones (lightblue, darkblue, dotted);
+}

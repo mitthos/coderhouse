@@ -1,0 +1,19 @@
+main {
+  grid-area: main;
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .main-p {
+        text-align: justify;
+      }
+  }
+}  
+  .main-p {
+    text-align: justify;
+  }
+
+  iframe {
+    width: 30rem;
+    height: 20rem
+  }

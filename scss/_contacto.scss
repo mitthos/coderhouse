@@ -1,0 +1,37 @@
+.lbl-contacto {
+    display: block;
+    text-align: center;
+  }
+
+.contacto-main {
+    display: block;
+    padding: 15px;
+    min-width: 33%;
+    text-align: center;
+    .contact-input {
+        width: 20rem;
+    }
+    .contact-area {
+        width: 30rem;
+    }
+
+  }
+
+  .contacto-article {
+    display: block;
+    text-align: left;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 400;
+    padding: 15px 150px 15px 150px;
+  }
+
+  .contacto-logo {
+    display: inline-block;
+    width: 20%;
+    align-items: center;
+    .con-logo {
+        height: 200px;
+      }
+  }
+
+  
