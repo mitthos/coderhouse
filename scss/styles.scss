@@ -1,0 +1,21 @@
+/*Globales*/
+@import "variables";
+@import "reset";
+@import "animate";
+@import "mixins";
+@import "globales";
+// 
+/**********Comunes**********/
+/*HEADER*/
+@import "header";
+/*MAIN*/
+@import "main";
+/*FOOTER*/
+@import "footer";
+
+/******Particulares*******/
+@import "nosotros";
+@import "contacto";
+
+
+ @import "mqueries";

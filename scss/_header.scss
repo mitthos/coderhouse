@@ -1,0 +1,17 @@
+.header {
+    grid-area: header;
+    background-image: url("../assets/banner3.avif");
+    background-size: cover;
+    .logo-header {
+        height: 200px;
+    }
+    .div-logo {
+        display: inline-block;
+        width: 20%;
+      }
+    .txt-header {
+        display: inline-block;
+        width: 70%;
+        text-align: center;
+    }
+}

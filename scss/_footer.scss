@@ -1,0 +1,13 @@
+footer {
+    background-image: url("../assets/banner3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .footer {
+    grid-area: footer;
+    .logo-footer{
+        height: 120px;
+      }
+  }

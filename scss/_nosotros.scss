@@ -1,0 +1,20 @@
+.nosotros-main {
+    /* display: inline-block; */
+    padding: 15px;
+    vertical-align: middle;
+    min-width: 33%;
+    text-align: center;
+    .nosotros-article {
+        display: inline-block;
+        vertical-align: middle;
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-size: 400;
+        padding: 15px 150px 15px 150px;
+        .nosotros-text {
+            text-align: justify;
+        }
+        .nosstros-img {
+            height: 300px;
+        }
+      }
+  }

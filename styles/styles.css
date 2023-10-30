@@ -1,83 +1,119 @@
+/*Globales*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@keyframes movimiento {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+.boton-federaciones {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton-federaciones:hover {
+  background-color: #fff;
+  text-decoration: dashed;
+  color: #3498db;
+  animation: movimiento 0.7s ease-in-out both;
+}
+
+.boton-torneos {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #3498db;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton-torneos:hover {
+  background-color: #3498db;
+  text-decoration: dashed;
+  color: #fff;
+  animation: movimiento 0.7s ease-in-out both;
+}
+
+.boton-contacto {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: lightblue;
+  color: darkblue;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton-contacto:hover {
+  background-color: darkblue;
+  text-decoration: dotted;
+  color: lightblue;
+  animation: movimiento 0.7s ease-in-out both;
+}
+
 body {
-  font-family: 'Ubuntu', sans-serif; 
+  font-family: "Ubuntu", sans-serif;
   color: darkblue;
 }
 
 .grid-container {
   height: 100vh;
   /* background-color: aquamarine; */
-  display: grid ;
+  display: grid;
   grid-template-rows: 0.2fr auto 0.2fr;
-  grid-template-areas: 
-    "header "
-    "main "
-    "footer "
-  ;
+  grid-template-areas: "header " "main " "footer ";
 }
 
+/**********Comunes**********/
+/*HEADER*/
 .header {
-  /* background-color: blue; */
   grid-area: header;
   background-image: url("../assets/banner3.avif");
   background-size: cover;
 }
-
-.logo-header{
-  /* display: inline-block; */
+.header .logo-header {
   height: 200px;
 }
-
-/* .brand {
-  display: flex;
-  align-items: center;
-} */
-
-.div-logo {
+.header .div-logo {
   display: inline-block;
   width: 20%;
 }
-
-.txt-header {
+.header .txt-header {
   display: inline-block;
   width: 70%;
-  /* display: flex; */
   text-align: center;
 }
 
-/* .nav {
-  display: flex;
-  justify-content: end;
-  grid-area: nav;
-} */
-
-/* .nav ul {
-  list-style-type: none;
-}
-
-.nav ul li {
-  display: inline-block;
-  margin: 10px;
-}
-
-.nav ul li a {
-  text-decoration: none;
-} */
-
+/*MAIN*/
 main {
   grid-area: main;
 }
-
 main section {
   display: flex;
-  
   align-items: center;
   justify-content: space-around;
+}
+main section .main-p {
+  text-align: justify;
 }
 
 .main-p {
@@ -85,74 +121,66 @@ main section {
 }
 
 iframe {
-  width: "560px";
-  height: "315px"
+  width: 30rem;
+  height: 20rem;
 }
 
-
-.footer {
-  /* background-color: red; */
-  grid-area: footer;
-}
-
+/*FOOTER*/
 footer {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   background-image: url("../assets/banner3.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.logo-footer{
-  /* display: inline-block; */
+.footer {
+  grid-area: footer;
+}
+.footer .logo-footer {
   height: 120px;
 }
 
-/* .btn {
-  background-color: #8AC9F0;
-  border-style: none;
-} */
-
-.btn-outline-info {
-  --bs-btn-color: #8AC9F0;
-    --bs-btn-border-color: #8AC9F0;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #8AC9F0;
-}
-
-.nos-main-section {
+/******Particulares*******/
+.nosotros-main {
   /* display: inline-block; */
   padding: 15px;
   vertical-align: middle;
   min-width: 33%;
   text-align: center;
 }
-
-.nos-main-article {
+.nosotros-main .nosotros-article {
   display: inline-block;
   vertical-align: middle;
   /* font-family: 'Courier New', Courier, monospace; */
   font-size: 400;
   padding: 15px 150px 15px 150px;
 }
-
-.nos-text {
+.nosotros-main .nosotros-article .nosotros-text {
   text-align: justify;
 }
-.nos-main-img {
+.nosotros-main .nosotros-article .nosstros-img {
   height: 300px;
 }
 
-.con-main-section {
+.lbl-contacto {
+  display: block;
+  text-align: center;
+}
+
+.contacto-main {
   display: block;
   padding: 15px;
   min-width: 33%;
   text-align: center;
 }
+.contacto-main .contact-input {
+  width: 20rem;
+}
+.contacto-main .contact-area {
+  width: 30rem;
+}
 
-.con-main-article {
+.contacto-article {
   display: block;
   text-align: left;
   /* font-family: 'Courier New', Courier, monospace; */
@@ -160,67 +188,56 @@ footer {
   padding: 15px 150px 15px 150px;
 }
 
-.con-main-logo {
+.contacto-logo {
   display: inline-block;
   width: 20%;
   align-items: center;
 }
-
-.con-logo {
+.contacto-logo .con-logo {
   height: 200px;
 }
 
-.btn-common {
-  width: 5rem;
-  background-color: #8AC9F0;
-  border-color: #78c0ed;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.btn-common:hover {
-  background-color: white;
-  border-color: #78c0ed;
-}
-
-@media (max-width: 1200px){
+@media (max-width: 576px) {
   main section {
     display: block;
     text-align: center;
   }
-
+  iframe {
+    width: 20rem;
+    height: 15rem;
+  }
 }
-
-@media (max-width: 992px){
-    main section {
-      display: block;
-      text-align: center;
-    }
-    iframe  {
-      width: 400px;
-      height: 380px;
-    }
-    form {
-      text-align: center;
-    }
-    form input , textarea, label{
-      width: 100%;
-      text-align: left;
-    }
-
-    .btn {
-      margin-bottom: 1rem;
-      text-align: center;
-    } 
-}
-
-@media (max-width: 768px){
+@media (min-width: 577px) and (max-width: 767px) {
   main section {
     display: block;
     text-align: center;
   }
-  iframe  {
-    width: 320px;
-    height: 280px;
+}
+@media (min-width: 768px) and (max-width: 995px) {
+  main section {
+    display: block;
+    text-align: center;
   }
 }
+@media (min-width: 996px) and (max-width: 1200px) {
+  main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section .main-p {
+    text-align: justify;
+  }
+}
+@media (min-width: 1200px) {
+  main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section .main-p {
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

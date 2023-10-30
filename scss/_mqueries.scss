@@ -1,0 +1,48 @@
+
+@media  (max-width: 576px) {
+    main section {
+        display: block;
+        text-align: center;
+      }
+      iframe  {
+        width: 20rem;
+        height: 15rem;
+      }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    main section {
+        display: block;
+        text-align: center;
+      }
+
+}
+@media (min-width: 768px) and (max-width: 995px) {
+    main section {
+        display: block;
+        text-align: center;
+      }
+}
+
+@media (min-width: 996px) and (max-width: 1200px) {
+    main section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .main-p {
+            text-align: justify;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    main section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .main-p {
+            text-align: justify;
+        }
+    }
+
+}
